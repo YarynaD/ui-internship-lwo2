@@ -11,6 +11,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 header {
   background-color: #fce38a;
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/Layer_15.png);
@@ -71,7 +74,16 @@ hr {
     font-family: MonsterratBold;
     font-size: 30px;
     font-weight: 700;
-    text-transform: none; }
+    text-transform: none;
+    margin-left: 19%; }
+
+.test {
+  background-color: yellow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; }
 
 .hamburger {
   display: none; }
@@ -103,8 +115,7 @@ hr {
 
 .welcome {
   margin: 0 auto;
-  width: 70%;
-  margin-top: 148px; }
+  width: 70%; }
   .welcome h2 {
     color: #ffffff;
     font-family: "Kaushan Script", cursive;

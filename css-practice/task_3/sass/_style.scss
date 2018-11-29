@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 header {
     background-color: $orange-background;
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/Layer_15.png);
@@ -63,13 +67,24 @@ hr {
     align-items: baseline;
     margin: 0 auto;
     padding-top: 13px;
+   
     h3 {
         color: $white-font;
         font-family: MonsterratBold;
         font-size: 30px;
         font-weight: 700;
         text-transform: none;
+        margin-left: 19%;
     }
+}
+
+.test {
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 .hamburger {
@@ -110,7 +125,7 @@ hr {
 .welcome {
     margin: 0 auto;
     width: 70%;
-    margin-top: 148px;
+    // margin-top: 148px;
     h2 {
         color: $white-font;
         font-family: $creative-font;

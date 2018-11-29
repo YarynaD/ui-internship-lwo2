@@ -11,36 +11,36 @@
 </head>
 <body>
     <header>
+    <div class="headline" id="myP">
+        <h3>MoGo</h3>
+        <img class="hamburger" src="img/hamb.png" alt="hamburger">
+        <nav class="navigation">
+            <a class="nav-item" href="#about">about</a>
+            <a class="nav-item" href="#service">service</a>
+            <a class="nav-item" href="#works">work</a>
+            <a class="nav-item" href="#blog">blog</a>
+            <a class="nav-item" href="#contacts">contact</a>
+            <a href="#"><img src="img/SHOPPING_CART.png" alt="cart"></a>
+            <a href="#"><img src="img/MAGNIFYING_GLASS.png" alt="glass"></a>
+        </nav>
+    </div>
+    <div class="welcome">
         <div class="container">
-            <div class="headline">
-                <h3>MoGo</h3>
-                <img class="hamburger" src="img/hamb.png" alt="hamburger">
-                <nav class="navigation">
-                    <a class="nav-item" href="#">about</a>
-                    <a class="nav-item" href="#">service</a>
-                    <a class="nav-item" href="#">work</a>
-                    <a class="nav-item" href="#">blog</a>
-                    <a class="nav-item" href="#">contact</a>
-                    <a href="#"><img src="img/SHOPPING_CART.png" alt="cart"></a>
-                    <a href="#"><img src="img/MAGNIFYING_GLASS.png" alt="glass"></a>
-                </nav>
-            </div>
-            <div class="welcome">
-                <h2>Creative Template</h2>
-                <h1>welcome to mogo</h1>
-                <hr>
-                <button>learn more</button>
-            </div>
-            <div class="carousell">
-                <div><span>01</span>intro</div>
-                <div><span>02</span>work</div>
-                <div><span>03</span>about</div>
-                <div><span>04</span>contacts</div>
-            </div>
+            <h2>Creative Template</h2>
+            <h1>welcome to mogo</h1>
+            <hr>
+            <button>learn more</button>
         </div>
+    </div>
+    <div class="carousell container">
+        <div><span>01</span>intro</div>
+        <div><span>02</span>work</div>
+        <div><span>03</span>about</div>
+        <div><span>04</span>contacts</div>
+    </div>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h4>What we do</h4>
                 <h3>story about us</h3>
@@ -81,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <section class="used-services">
+        <section class="used-services" id="service">
             <div class="container">
                 <h4>We work with</h4>
                 <h3>amazing services</h3>
@@ -234,7 +234,7 @@
                 <img src="img/studio.png" alt="logo">
             </div>
         </div>
-        <section class="works">
+        <section class="works" id="works">
             <div class="container">
                 <h4>What we do</h4>
                 <h3>some of our work</h3>
@@ -299,7 +299,7 @@
                 </div>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="container">
                 <h4>Our stories</h4>
                 <h3>latest blog</h3>
@@ -360,7 +360,7 @@
         </section>
     </main>
     <footer>
-        <div class="container">
+        <div class="container" id="contacts">
         <article class="contacts">
             <h2>MoGo</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -435,5 +435,6 @@
         <p>&#169; 2016 MoGo free PSD template by <span>Laaqiq</span></p>
         </div>
     </footer>
+    <script src="scroll.js"></script>
 </body>
 </html>
