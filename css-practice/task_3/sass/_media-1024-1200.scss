@@ -1,0 +1,140 @@
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+   
+    .welcome {
+        h1 {
+            font-size: 100px;
+        }
+        button {
+            margin-left: 38.5%;
+        }
+    }
+
+    .navigation {
+        width: 65%;
+    }
+    
+    .about-photos {
+        width: 100%;
+        img {
+            max-width: 30%;
+            height: auto;
+        }
+    }
+    .about-hover-image {
+        width: 300px;
+        left: 0;
+        top: 302px;
+    }
+
+    .feedback div {
+        hr {
+            left: 200px;
+        }
+        p {
+            span {
+                margin-left: 0;
+            }
+        }
+    }
+    .feedback.nobackground .container {
+        hr {
+            left: 200px;
+        }
+        p {
+            span {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    .align-services p {
+        max-width: 250px;
+    }
+
+   
+    .team-photos {
+        width: 100%;
+        div {
+            width: 30%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .team-hover-image {
+        height: 381px;
+    }
+
+    .follow-us {
+        padding: 0;
+        margin: 0 auto;
+        div {
+            height: 35px;
+        }
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .clients {
+        padding-top: 40px;
+    }
+
+    .people-say{
+        display: block;
+        margin-left: 10%;
+        margin-top: 20px;
+        div {
+            max-width: 80%;
+            margin: 25px 0 0 0;
+            hr {
+                margin-right: 70%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        } 
+    }
+
+    .events-list {
+        width: 100%;
+    }
+
+    .event {
+        width: 30%;
+        img {
+            width: 100%;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .date {
+        top: 105px;
+    }
+
+    .counter {
+        img {
+            width: 16px;
+        }
+    }
+
+    footer {
+        .container {
+            flex-wrap: wrap;
+        }
+    }
+
+    .footer-instagram {
+        max-width: 90%;
+        margin-left: 8%;
+    }
+}
+
