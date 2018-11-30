@@ -1,12 +1,12 @@
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('.headline');
-    if (pageYOffset > 1) {
-        header.classList.add('test');
-      } else {
-        header.classList.remove('test');
-      }
-});
+function toScroll() {
+  const header = document.getElementById('myP');
+  if (pageYOffset > 50) {
+    header.classList.add('test');
+  } else {
+    header.classList.remove('test');
+  }
+}
 
+window.addEventListener('scroll', toScroll);
 
- 
 
