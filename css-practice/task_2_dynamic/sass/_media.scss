@@ -1,0 +1,130 @@
+@media only screen and (max-width: 1399px) {
+  .banner {
+    background-position-y: 0;
+  }
+  .feedbacks {
+    @include justify-content(space-around);
+  }
+  .feedback {
+    margin: 2%;
+  }
+  .three-diagrams .diagram{
+    margin: 2%;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .container {
+    max-width: 760px;
+    margin: 0 10%;
+  }
+  .social-icons {
+    a {
+    margin: 0px 10px;
+    }
+  }
+  .load-icon {
+    margin-right: 10px;
+  }
+  .tab-image {
+    margin-right: 7%;
+    img {
+      width: 150%;
+    }
+  }
+  .sub-list-image img, 
+  .standart-picture-image img,
+  .sub-description {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .two-columns {
+    @include justify-content(center);
+    @include align-items(center);
+  }
+  .banner-text {
+    padding: 10%;
+    margin-bottom: 10%;
+    .white-line {
+      margin: 10px auto;
+    }
+  }
+  .main-form {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+  .social-icons a {
+    font-size: 24px;
+    padding-bottom: 5%;
+    margin: 0px auto;
+  }
+  .two-columns,
+  .social-media-bar,
+  .about-tabs .container,
+  .sub-list .container,
+  .standart-picture .container,
+  .articles,
+  .three-diagrams,
+  .contact-form form {
+    @include flex-direction(column);
+  }
+  .banner-text,
+  .social-media-bar .media-bar-text,
+  .tab-description,
+  .standart-picture .sub-description {
+    width: 100%;
+    text-align: center;
+  }
+  .about-tabs .container {
+    padding-top: 20px;
+    .tabs {
+      @include flexbox();
+      @include flex-direction(row);
+      width: 100%;
+      max-width: 350px;
+      .tab {
+        width: 100%;
+      }
+    }
+  }
+  .tab-description {
+    padding-top: 20px;
+  }
+  .tab-image {
+    width: 100%;
+    max-width: 450px;
+    padding: 0;
+    margin: 20px auto 0;
+    img {
+      width: 100%;
+    }
+  }
+  .standart-picture .orange-line {
+    margin: 10px auto;
+  }
+  .sub-list-image {
+    left: 0;
+  }
+  .standart-picture-image {
+    top: 0;
+    right: 0;
+  }
+  .pricing p {
+    margin: 0;
+  }
+  .three-diagrams .diagram {
+    width: 80%;
+    max-width: 350px;
+    margin: 20px auto;
+    &:nth-child(2) {
+      top: 0;
+    }
+  }
+  .left-column-form,
+  .right-column-form,
+  .contact-form form {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}
