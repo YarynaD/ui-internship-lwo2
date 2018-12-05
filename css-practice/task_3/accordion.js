@@ -1,21 +1,24 @@
-const acc = document.getElementsByClassName('accordion-heading');
+/* global document */
+
+const accordion = document.getElementsByClassName('accordion-heading');
 let panel = document.getElementsByClassName('panel');
 
-for (let i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-  	let setClasses = !this.classList.contains('active');
-    setClass(acc, 'active', 'remove');
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].onclick = function() {
+    let classSwitch = !this.classList.contains('active');
+    setClass(accordion, 'active', 'remove');
     setClass(panel, 'show', 'remove');
 
-   	if (setClasses) {
+    if (classSwitch) {
       this.classList.toggle('active');
       this.nextElementSibling.classList.toggle('show');
     }
   };
 }
 
-function setClass(els, className, fnName) {
-  for (let i = 0; i < els.length; i++) {
-    els[i].classList[fnName](className);
+function setClass(el, className, func) {
+  for (let i = 0; i < el.length; i++) {
+    el[i].classList[func](className);
   }
 }
+

@@ -4,16 +4,22 @@
     }
 
     .headline {
-        flex-direction: column;
         h3 {
             margin-bottom: 20px;
         }
     }
 
+    .movingHeader {
+        display: none;
+    }
+
     .navigation {
-        a {
-            margin-left: 83px;
-        }
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        width: 30px;
+        height: auto;
     }
 
     .welcome {
@@ -67,6 +73,13 @@
         }
     }
 }
+
+.slider {
+    width: 100%;
+    p {
+        width: 60%;
+    }
+}
     
     .own-services {
         img {
@@ -83,6 +96,10 @@
             height: 30px;
             padding: 16px 0 12px 16px;
         }
+    }
+
+    .accordion {
+        width: 90%;
     }
     .team-photos {
         flex-direction: column;

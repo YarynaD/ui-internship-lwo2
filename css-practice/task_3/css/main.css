@@ -78,7 +78,7 @@ hr {
     text-transform: none;
     margin-left: 19%; }
 
-.test {
+.movingHeader {
   background-color: rgba(128, 128, 128, 0.7);
   box-shadow: 0 6px 2px -2px rgba(128, 128, 128, 0.4);
   border: none;
@@ -87,7 +87,7 @@ hr {
   left: 0;
   right: 0;
   z-index: 10; }
-  .test .nav-item {
+  .movingHeader .nav-item {
     transition-property: border-bottom;
     transition-duration: 2s;
     transition-delay: 1s; }
@@ -409,37 +409,64 @@ hr {
 
 .feedback {
   background-color: #f8f8f8;
-  padding-bottom: 65px; }
-  .feedback div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative; }
-    .feedback div p {
-      max-width: 767px;
-      color: #999999;
-      font-family: "Roboto", sans-serif;
-      font-style: italic;
+  padding-bottom: 65px;
+  padding-top: 65px;
+  margin-top: 60px; }
+  .feedback p {
+    max-width: 767px;
+    color: #999999;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px; }
+    .feedback p span {
+      color: #333333;
+      font-family: "Kaushan Script", cursive;
       font-size: 24px;
       font-weight: 400;
-      line-height: 36px;
-      padding-top: 160px; }
-      .feedback div p span {
-        color: #333333;
-        font-family: "Kaushan Script", cursive;
-        font-size: 24px;
-        font-weight: 400;
-        clear: both;
-        display: inline-block;
-        width: 100%;
-        margin-left: 65px;
-        margin-top: 6px; }
-    .feedback div hr {
-      position: absolute;
-      bottom: 15px;
-      left: 320px; }
-    .feedback div img {
-      margin-top: 91px; }
+      clear: both;
+      display: inline-block;
+      width: 100%;
+      margin-top: 6px;
+      padding-left: 65px; }
+  .feedback hr {
+    position: absolute;
+    bottom: 15px;
+    left: 25%; }
+  .feedback button {
+    width: 12px;
+    height: 22px;
+    border: none;
+    background: none; }
+    .feedback button:first-child {
+      background-image: url(../img/DOWN_copy_2.png); }
+    .feedback button:last-child {
+      background-image: url(../img/DOWN_copy.png); }
+
+.slider {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.holder {
+  width: 90%;
+  overflow: hidden; }
+
+.slide-in {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative; }
+
+.slide-holder {
+  width: 300%;
+  display: flex;
+  transform: translate(-34%); }
 
 .chat {
   width: 150px;
@@ -447,18 +474,34 @@ hr {
   border: 3px solid #95e1d3;
   background-image: url(../img/SPEECH_4.png);
   background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 158px; }
+  background-repeat: no-repeat; }
+
+.feed-photo {
+  width: 150px;
+  height: 150px;
+  border: none;
+  background-color: none; }
+  .feed-photo img {
+    width: 140px; }
+
+.left-scroll {
+  transform: translate(-67%);
+  transition-duration: 3s; }
+
+.left-scroll1 {
+  transform: translate(-34%);
+  transition-duration: 3s; }
+
+.right-scroll {
+  transform: translate(0%);
+  transition-duration: 3s; }
+
+.right-scroll1 {
+  transform: translate(-34%);
+  transition-duration: 3s; }
 
 .nobackground {
   background: none; }
-
-.feedback.nobackground .container {
-  margin-top: 10px; }
-  .feedback.nobackground .container hr {
-    bottom: 36px; }
-  .feedback.nobackground .container p span {
-    margin-left: 42px; }
 
 .team {
   padding-top: 88px; }
@@ -877,6 +920,8 @@ footer {
     width: 300px;
     left: 0;
     top: 302px; }
+  .accordion {
+    width: 40%; }
   .feedback div hr {
     left: 200px; }
   .feedback div p span {
@@ -893,6 +938,10 @@ footer {
       width: 30%; }
       .team-photos div img {
         width: 100%; }
+  .slider {
+    width: 100%; }
+    .slider p {
+      width: 61%; }
   .team-hover-image {
     height: 381px; }
   .follow-us {
@@ -938,12 +987,16 @@ footer {
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     width: 760px; }
-  .headline {
-    flex-direction: column; }
-    .headline h3 {
-      margin-bottom: 20px; }
-  .navigation a {
-    margin-left: 83px; }
+  .headline h3 {
+    margin-bottom: 20px; }
+  .movingHeader {
+    display: none; }
+  .navigation {
+    display: none; }
+  .hamburger {
+    display: flex;
+    width: 30px;
+    height: auto; }
   .welcome h1 {
     font-size: 90px; }
   .welcome button {
@@ -973,6 +1026,10 @@ footer {
     max-width: 490px; }
     .feedback div p span {
       margin-left: 0; }
+  .slider {
+    width: 100%; }
+    .slider p {
+      width: 60%; }
   .own-services img {
     display: none; }
   .accordion-heading h3 {
@@ -981,6 +1038,8 @@ footer {
     width: 30px;
     height: 30px;
     padding: 16px 0 12px 16px; }
+  .accordion {
+    width: 90%; }
   .team-photos {
     flex-direction: column;
     align-items: center; }
@@ -1026,6 +1085,8 @@ footer {
     display: flex;
     width: 30px;
     height: auto; }
+  .movingHeader {
+    display: none; }
   .welcome {
     margin-top: 50px; }
     .welcome h1 {
@@ -1057,6 +1118,12 @@ footer {
     left: 20px;
     width: 379px;
     height: 251px; }
+  .slider {
+    width: 100%; }
+    .slider p {
+      width: 80%; }
+    .slider button {
+      display: none; }
   .statistics .container {
     flex-direction: column; }
     .statistics .container div {
@@ -1085,6 +1152,8 @@ footer {
     width: 30px;
     height: 30px;
     padding: 16px 0 12px 16px; }
+  .accordion {
+    width: 90%; }
   .feedback div {
     flex-direction: column;
     align-items: center; }
@@ -1150,6 +1219,8 @@ footer {
     display: flex;
     width: 30px;
     height: auto; }
+  .movingHeader {
+    display: none; }
   .welcome {
     margin-top: 50px;
     padding-bottom: 50px; }
@@ -1182,6 +1253,8 @@ footer {
       border-right: none;
       border-left: none;
       border-bottom: solid rgba(255, 255, 255, 0.3) 1px; }
+  .slider {
+    display: none; }
   .used-services hr {
     margin-bottom: 30px; }
   .align-services {

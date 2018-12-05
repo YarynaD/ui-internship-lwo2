@@ -1,9 +1,11 @@
+/* global document */
+
 function toScroll() {
-  const header = document.getElementById('myP');
+  const header = document.getElementById('myHeadline');
   if (pageYOffset > 50) {
-    header.classList.add('test');
+    header.classList.add('movingHeader');
   } else {
-    header.classList.remove('test');
+    header.classList.remove('movingHeader');
   }
 }
 

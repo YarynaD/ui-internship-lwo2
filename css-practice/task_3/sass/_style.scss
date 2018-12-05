@@ -78,7 +78,7 @@ hr {
     }
 }
 
-.test {
+.movingHeader {
     background-color: rgba(128,128,128,0.7);
     box-shadow: 0 6px 2px -2px rgba(128,128,128,0.4);
     border: none;
@@ -476,11 +476,9 @@ h4 {
 .feedback {
     background-color: #f8f8f8;
     padding-bottom: 65px;
-    div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: relative;
+    padding-top: 65px;
+    margin-top: 60px;
+
     p {
         max-width: 767px;
         color: $gray-color;
@@ -489,7 +487,6 @@ h4 {
         font-size: 24px;
         font-weight: 400;
         line-height: 36px;
-        padding-top: 160px;
         span {
             color: $dark-font;
             font-family: $creative-font;
@@ -498,20 +495,58 @@ h4 {
             clear: both;
             display: inline-block;
             width: 100%;
-            margin-left: 65px;
             margin-top: 6px;
+            padding-left: 65px;
         }
     }
     hr {
         position: absolute;
         bottom: 15px;
-        left: 320px;
+        left: 25%;
       }
     
-    img {
-        margin-top: 91px;
+    button {
+        width: 12px;
+        height: 22px;
+        border: none;
+        background: none;
+        &:first-child {
+            background-image: url(../img/DOWN_copy_2.png);
+        }
+        &:last-child {
+            background-image: url(../img/DOWN_copy.png);
+        }
+        
     }
-    }
+    
+}
+
+.slider {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.holder {
+    width: 90%;
+    overflow: hidden;
+}
+.slide-in {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+} 
+
+.slide-holder {
+    width: 300%;
+    display: flex;
+    transform: translate(-34%);
+
 }
 
 .chat {
@@ -521,24 +556,42 @@ h4 {
     background-image: url(../img/SPEECH_4.png);
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 158px;
+}
+
+.feed-photo {
+    width: 150px;
+    height: 150px;
+    border: none;
+    background-color: none;
+    img {
+        width: 140px;
+    }
+}
+
+.left-scroll {
+    transform: translate(-67%);
+    transition-duration: 3s;
+}
+
+.left-scroll1 {
+    transform: translate(-34%);
+    transition-duration: 3s;
+}
+
+.right-scroll {
+    transform: translate(0%);
+    transition-duration: 3s;
+}
+
+.right-scroll1 {
+    transform: translate(-34%);
+    transition-duration: 3s;
 }
 
 .nobackground {
     background: none;
 }
 
-.feedback.nobackground .container {
-    margin-top: 10px;
-    hr {
-        bottom: 36px;
-    }
-    p {
-        span {
-            margin-left: 42px;
-        }
-    }
-}
 
 .team {
     padding-top: 88px;

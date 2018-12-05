@@ -20,6 +20,11 @@
         width: 30px;
         height: auto;
     }
+
+    .movingHeader {
+        display: none;
+    }
+
     .welcome {
         margin-top: 50px;
         padding-bottom: 50px;
@@ -69,6 +74,9 @@
         } 
     }
 
+    .slider {
+            display: none;
+        }
     .used-services {
         hr {
             margin-bottom: 30px;

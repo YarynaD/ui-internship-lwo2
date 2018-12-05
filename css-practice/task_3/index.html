@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-    <div class="headline" id="myP">
+    <div class="headline" id="myHeadline">
         <h3>MoGo</h3>
         <img class="hamburger" src="img/hamb.png" alt="hamburger">
         <nav class="navigation">
@@ -212,14 +212,34 @@
                 </div>
         </section>
         <div class="feedback">
-            <div class="container">
-                <img src="img/DOWN_copy_2.png" alt="arrow" width="12" height="22">
-                <div class="chat"></div>
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                    <span>Jon Doe</span>
-                </p>
-                <hr>
-                <img src="img/DOWN_copy.png" alt="arrow" width="12" height="22">
+            <div class="slider">
+                <button class="scroll-left"></button>
+                <div class="holder">
+                    <div class="slide-holder">
+                        <div class="slide-in">
+                            <div class="chat"></div>
+                            <p>“1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                <span>Jon Doe</span>
+                            </p>
+                            <hr>   
+                        </div>
+                        <div class="slide-in">
+                            <div class="chat"></div>
+                            <p>“2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                <span>Jon Doe</span>
+                            </p>
+                            <hr>   
+                        </div>
+                        <div class="slide-in">
+                            <div class="chat"></div>
+                            <p>“3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                <span>Jon Doe</span>
+                            </p>
+                            <hr>   
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-right"></button>
             </div>
         </div>
         <section class="team">
@@ -286,15 +306,35 @@
             <span class="close">&times;</span>
             <img class="modal-content" id="img01">
         </div>
-        <div class="feedback nobackground">
-            <div class="container">
-                <img src="img/DOWN_copy_2.png" alt="arrow" width="12" height="22">
-                <img src="img/Layer_36.png" alt="user">
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                    <span class="kill-joshua" style="margin-left: 0;">Joshua Earle</span>
-                </p>
-                <hr>
-                <img src="img/_DOWN_copy.png" alt="arrow" width="12" height="22">
+        <div class="feedback">
+            <div class="slider">
+                <button class="scroll-left"></button>
+                <div class="holder">
+                    <div class="slide-holder">
+                        <div class="slide-in">
+                            <div class="chat"></div>
+                            <p>“1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                <span>Jon Doe</span>
+                            </p>
+                            <hr>   
+                        </div>
+                        <div class="slide-in">
+                            <div class="feed-photo"><img src="img/Layer_36.png" alt="phpto"></div>
+                            <p>“2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                <span>Jon Doe</span>
+                            </p>
+                            <hr>   
+                        </div>
+                        <div class="slide-in">
+                            <div class="chat"></div>
+                            <p>“3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                <span>Jon Doe</span>
+                            </p>
+                            <hr>   
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-right"></button>
             </div>
         </div>
         <section class="clients">
@@ -473,5 +513,6 @@
     <script src="scroll.js"></script>
     <script src="modal-img.js"></script>
     <script src="accordion.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>

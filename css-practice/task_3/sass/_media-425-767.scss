@@ -20,6 +20,10 @@
         width: 30px;
         height: auto;
     }
+
+    .movingHeader {
+        display: none;
+    }
     .welcome {
         margin-top: 50px;
         h1 {
@@ -65,6 +69,15 @@
         height: 251px;
     }
 
+    .slider {
+        width: 100%;
+        p {
+            width: 80%;
+        }
+        button {
+            display: none;
+        }
+    }
     .statistics {
         .container {
             flex-direction: column;
@@ -116,6 +129,10 @@
             height: 30px;
             padding: 16px 0 12px 16px;
         }
+    }
+
+    .accordion {
+        width: 90%;
     }
 
     .feedback div {
