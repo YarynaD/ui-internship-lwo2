@@ -500,9 +500,6 @@ hr {
   transform: translate(-34%);
   transition-duration: 3s; }
 
-.nobackground {
-  background: none; }
-
 .team {
   padding-top: 88px; }
   .team p {
