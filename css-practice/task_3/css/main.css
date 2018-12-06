@@ -559,13 +559,17 @@ hr {
   margin-top: 102px; }
 
 .events-list {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 50% 50%;
+  column-gap: 4%;
   margin-top: 49px; }
 
 .event {
-  max-width: 380px;
-  position: relative; }
+  width: 100%;
+  position: relative;
+  margin-right: 10px; }
   .event p {
     margin-bottom: 20px; }
   .event h6 {
@@ -701,7 +705,9 @@ footer {
 
 .footer-blogs {
   margin-top: 14px;
-  padding-right: 6px; }
+  padding-right: 6px;
+  height: 360px;
+  overflow: scroll; }
   .footer-blogs h2 {
     color: #333333;
     font-family: MonsterratReg;

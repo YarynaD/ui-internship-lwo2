@@ -665,13 +665,17 @@ h4 {
 }
 
 .events-list {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+    column-gap: 4%;
     margin-top: 49px;
 }
 .event {
-    max-width: 380px;
+    width: 100%;
     position: relative;
+    margin-right: 10px;
     p {
         margin-bottom: 20px;
     }
@@ -836,6 +840,8 @@ footer {
 .footer-blogs {
     margin-top: 14px;
     padding-right: 6px;
+    height: 360px;
+    overflow: scroll;
     h2 {
       color: $dark-font;
       font-family: MonsterratReg;
