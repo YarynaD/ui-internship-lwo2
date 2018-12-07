@@ -14,7 +14,7 @@ for (let i = 0; i < images.length; i++) {
   };
 }
 
-let span = document.getElementsByClassName('close')[0];
+let span = document.getElementsByClassName('modal')[0];
 
 span.onclick = function() {
   modal.style.display = 'none';

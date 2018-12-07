@@ -356,7 +356,14 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #e5e5e5;
+  background-color: transparent;
+  background-image: url(../img/UP.png);
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  background-size: 3%; }
+  .accordion-heading.active {
+    background-image: url(../img/DOWN.png); }
   .accordion-heading img {
     width: 30px;
     height: auto;
