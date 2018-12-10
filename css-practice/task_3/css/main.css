@@ -571,10 +571,18 @@ hr {
   position: relative;
   margin-right: 10px; }
   .event p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    max-height: 48px;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .event h6 {
     margin-top: 12px;
     margin-bottom: 10px; }
+
+.blog-image {
+  width: 100%;
+  height: 255px; }
 
 .counter {
   display: flex;
@@ -706,26 +714,28 @@ footer {
 .footer-blogs {
   margin-top: 14px;
   padding-right: 6px;
-  height: 360px;
-  overflow: scroll; }
+  max-height: 380px;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 100%; }
   .footer-blogs h2 {
-    color: #333333;
+    color: black;
     font-family: MonsterratReg;
     font-size: 14px;
-    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 36px; }
 
 .footer-blog {
   max-width: 350px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  display: grid;
+  grid-template-columns: 34% 60%;
+  column-gap: 4%; }
   .footer-blog img {
     margin-right: 20px;
-    margin-bottom: 28px; }
+    margin-bottom: 28px;
+    width: 100%; }
   .footer-blog p {
-    color: #333333;
+    color: black;
     font-family: MonsterratReg;
     font-size: 12px;
     font-weight: 400;
@@ -733,10 +743,10 @@ footer {
     text-transform: uppercase; }
 
 .footer-blog-text {
-  margin-top: 18px; }
+  margin-bottom: 10px; }
 
 .footer-blog-date {
-  color: #999999;
+  color: grey;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 400;

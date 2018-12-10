@@ -678,11 +678,20 @@ h4 {
     margin-right: 10px;
     p {
         margin-bottom: 20px;
+        max-height: 48px;
+        max-width: 90%;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     h6 {
         margin-top: 12px;
         margin-bottom: 10px;
     }
+}
+
+.blog-image {
+    width: 100%;
+    height: 255px;
 }
 
 .counter {
@@ -840,50 +849,49 @@ footer {
 .footer-blogs {
     margin-top: 14px;
     padding-right: 6px;
-    height: 360px;
-    overflow: scroll;
+    max-height: 380px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 100%;
     h2 {
-      color: $dark-font;
+      color: black;
       font-family: MonsterratReg;
       font-size: 14px;
-      font-weight: 400;
       text-transform: uppercase;
       margin-bottom: 36px;
     }
-}
-
-.footer-blog {
+  }
+  .footer-blog {
     max-width: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 34% 60%;
+    column-gap: 4%;
     img {
       margin-right: 20px;
       margin-bottom: 28px;
+      width: 100%;
     }
     p {
-      color: $dark-font;
+      color: black;
       font-family: MonsterratReg;
       font-size: 12px;
       font-weight: 400;
       line-height: 18px;
       text-transform: uppercase;
     }
-}
-
-.footer-blog-text {
-    margin-top: 18px;
-}
-
-.footer-blog-date {
-    color: $gray-color;
+  }
+  .footer-blog-text {
+    margin-bottom: 10px;
+  }
+  .footer-blog-date {
+    color: grey;
     font-family: $roboto-font;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
     font-style: italic;
-}
-
+  }
+  
 .footer-instagram {
     max-width: 280px;
     padding-left: 7px;
