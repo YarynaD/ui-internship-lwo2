@@ -22,3 +22,4 @@ function setClass(el, className, func) {
   }
 }
 
+document.getElementById("default-open").click();

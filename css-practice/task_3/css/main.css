@@ -348,8 +348,7 @@ hr {
 .accordion-section {
   width: 100%;
   margin-left: 30px;
-  border: 1px solid #e5e5e5;
-  margin-bottom: 34px; }
+  border: 1px solid #e5e5e5; }
 
 .accordion-heading {
   display: flex;
@@ -472,8 +471,7 @@ hr {
 
 .slide-holder {
   width: 300%;
-  display: flex;
-  transform: translate(-34%); }
+  display: flex; }
 
 .chat {
   width: 150px;
@@ -491,20 +489,20 @@ hr {
   .feed-photo img {
     width: 140px; }
 
-.left-scroll {
-  transform: translate(-67%);
-  transition-duration: 3s; }
-
-.left-scroll1 {
+.init34 {
   transform: translate(-34%);
-  transition-duration: 3s; }
+  transition-duration: 0s; }
 
-.right-scroll {
+.scroll0 {
   transform: translate(0%);
   transition-duration: 3s; }
 
-.right-scroll1 {
+.scroll34 {
   transform: translate(-34%);
+  transition-duration: 3s; }
+
+.scroll67 {
+  transform: translate(-67%);
   transition-duration: 3s; }
 
 .team {
