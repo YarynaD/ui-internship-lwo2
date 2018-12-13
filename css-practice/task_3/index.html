@@ -136,13 +136,14 @@
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 <div class="display">
-                <img src="img/Layer_43.png" alt="photo">
+                <img src="img/Layer_43.png" alt="photo" class="accord-img tabSwitch" id="tab1">
+                <img src="img/event_823-500-380-20120229132217.jpg" alt="photo" class="accord-img" id="tab2">
+                <img src="img/picture-an-oak-1534331433-1534331465_n.jpg" alt="photo" class="accord-img" id="tab3">
                 <div class="accordion">
                     <div class="accordion-section first">
-                    <div class="accordion-heading" id="default-open">
+                    <div class="accordion-heading" data-id="tab1" id="default-open">
                         <img src="img/PICTURE1.png" alt="picture icon">
                         <h3>Photography</h3>
-                        <button class="acc-button arrow-up active"></button>
                     </div>
                         <p class="panel"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -162,10 +163,9 @@
                         </p>
                     </div>
                     <div class="accordion-section second">
-                    <div class="accordion-heading">
+                    <div class="accordion-heading" data-id="tab2"> 
                         <img src="img/EQUALIZER.png" alt="equalizer icon">
                         <h3>creativity</h3>
-                        <button class="acc-button"></button>
                     </div>
                         <p class="panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -185,10 +185,9 @@
                         </p>
                     </div>
                     <div class="accordion-section third">
-                    <div class="accordion-heading">
+                    <div class="accordion-heading" data-id="tab3">
                         <img src="img/BULLSEYE.png" alt="bullseye icon">
                         <h3>web design</h3>
-                        <button class="acc-button"></button>
                     </div>
                         <p class="panel"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -306,7 +305,7 @@
             <img class="modal-content" id="img01">
         </div>
         <div class="feedback">
-            <div class="slider">
+            <div class="slider-second">
                 <button class="scroll-left"></button>
                 <div class="holder">
                     <div class="slide-holder">

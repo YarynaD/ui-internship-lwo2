@@ -22,4 +22,18 @@ function setClass(el, className, func) {
   }
 }
 
-document.getElementById("default-open").click();
+document.getElementById('default-open').click();
+
+function activateTab(evt) {
+  const tab = evt.target;
+  const dataId = tab.getAttribute('data-id');
+  const tabImage = document.getElementsByClassName('accord-img');
+  for (let i = 0; i < accordion.length; i++) {
+    tabImage[i].classList.remove('tabSwitch');
+  }
+  const activeImage = document.getElementById(dataId);
+  activeImage.classList.add('tabSwitch');
+}
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener('click', activateTab, true);
+}

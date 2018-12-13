@@ -366,12 +366,19 @@ hr {
   .accordion-heading img {
     width: 30px;
     height: auto;
-    padding: 16px 0px 12px 16px; }
+    padding: 16px 0px 12px 16px;
+    z-index: -5; }
   .accordion-heading i {
     color: #cccccc;
     font-size: 40px;
     margin-right: 18px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    z-index: -5; }
+
+.accord-img {
+  display: none; }
+  .accord-img.tabSwitch {
+    display: block; }
 
 .accordion-section h3 {
   color: #333333;
@@ -380,7 +387,8 @@ hr {
   font-weight: 400;
   text-transform: uppercase;
   margin: auto;
-  margin-left: 12px; }
+  margin-left: 12px;
+  z-index: -5; }
 
 .accordion-section p {
   color: #999999;
@@ -450,7 +458,7 @@ hr {
     .feedback button:last-child {
       background-image: url(../img/DOWN_copy.png); }
 
-.slider {
+.slider, .slider-second {
   width: 1200px;
   margin: 0 auto;
   overflow: hidden;
