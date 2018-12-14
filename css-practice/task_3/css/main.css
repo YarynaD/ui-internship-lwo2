@@ -458,7 +458,7 @@ hr {
     .feedback button:last-child {
       background-image: url(../img/DOWN_copy.png); }
 
-.slider, .slider-second {
+.slider {
   width: 1200px;
   margin: 0 auto;
   overflow: hidden;
@@ -479,7 +479,9 @@ hr {
 
 .slide-holder {
   width: 300%;
-  display: flex; }
+  display: flex;
+  transform: translate(-33%);
+  transition-duration: 3s; }
 
 .chat {
   width: 150px;
@@ -496,22 +498,6 @@ hr {
   background-color: none; }
   .feed-photo img {
     width: 140px; }
-
-.init34 {
-  transform: translate(-34%);
-  transition-duration: 0s; }
-
-.scroll0 {
-  transform: translate(0%);
-  transition-duration: 3s; }
-
-.scroll34 {
-  transform: translate(-34%);
-  transition-duration: 3s; }
-
-.scroll67 {
-  transform: translate(-67%);
-  transition-duration: 3s; }
 
 .team {
   padding-top: 88px; }

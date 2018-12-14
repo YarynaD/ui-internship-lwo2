@@ -540,7 +540,7 @@ h4 {
     
 }
 
-.slider, .slider-second {
+.slider {
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -564,6 +564,8 @@ h4 {
 .slide-holder {
     width: 300%;
     display: flex;
+    transform: translate(-33%);
+    transition-duration: 3s;
 }
 
 .chat {
@@ -584,24 +586,24 @@ h4 {
         width: 140px;
     }
 }
-.init34 {
-    transform: translate(-34%);
-    transition-duration: 0s;
-}
-.scroll0 {
-    transform: translate(0%);
-    transition-duration: 3s;
-}
+// .init34 {
+//     transform: translate(-34%);
+//     transition-duration: 0s;
+// }
+// .scroll0 {
+//     transform: translate(0%);
+//     transition-duration: 3s;
+// }
 
-.scroll34 {
-    transform: translate(-34%);
-    transition-duration: 3s;
-}
+// .scroll34 {
+//     transform: translate(-34%);
+//     transition-duration: 3s;
+// }
 
-.scroll67 {
-    transform: translate(-67%);
-    transition-duration: 3s;
-}
+// .scroll67 {
+//     transform: translate(-67%);
+//     transition-duration: 3s;
+// }
 
 .team {
     padding-top: 88px;

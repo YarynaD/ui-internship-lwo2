@@ -1,57 +1,39 @@
 /* global document */
 
-const sliderArray = [...document.querySelectorAll('.slider')];
-const slides = [...document.querySelectorAll('.slide-holder')];
-let counter = 0;
+(function() {
+  const sliderArray = [...document.querySelectorAll('.slider')];
+  const sldr = [...document.querySelectorAll('.slide-holder')];
+  let trFinished = 1;
+  sliderArray.forEach((el) => {
+    el.addEventListener('click', clickfunction, true);
+  });
+  sldr.forEach((el) => {
+    el.addEventListener('transitionend', function(event) {
+      trFinished = 1;
+    }, false);
+  });
 
-let firslTimeFlag = 1;
-
-for (let i = 0; i < sliderArray.length; i++) {
-  slides[i].classList.add('init34');
-}
-
-sliderArray.forEach((el) => {
-  el.addEventListener('click', function(e) {
-
-    if (firslTimeFlag) {
-      for (let i = 0; i < sliderArray.length; i++) {
-        slides[i].classList.remove('init34');
-      }
+  function clickfunction(e) {
+    if (trFinished === 0) {
+      return;
     }
-
+    trFinished = 0;
+    let motion = -33;
     if (e.target.classList.contains('scroll-left')) {
-      counter--;
-      if (counter < -1) {
-        counter = -1;
-      }
-    } else if ( e.target.classList.contains('scroll-right')) {
-      counter++;
-      if (counter > 1) {
-        counter = 1;
-      }
+      motion = 33;
     }
+    let slides = e.target.parentNode.getElementsByClassName('slide-holder')[0];
+    let style = window.getComputedStyle(slides);
+    let trans = style.transform;
+    let numberPattern = /-*\d+/g;
+    let values = trans.match( numberPattern );
+    let computedTranslateX = values[4];
+    let xPercentage = (computedTranslateX / slides.offsetWidth) * 100;
+    let newX = xPercentage + motion;
+    if (newX > 4 || newX <-70) {
+      newX -= motion;
+    }
+    slides.style.transform = 'translateX(' + newX + '%)';
+  }
+})();
 
-    switch (counter) {
-      case -1:
-        for (let i = 0; i < sliderArray.length; i++) {
-          slides[i].classList.remove('scroll34');
-          slides[i].classList.add('scroll0');
-        }
-        break;
-      case 0:
-        for (let i = 0; i < sliderArray.length; i++) {
-          slides[i].classList.add('scroll34');
-          slides[i].classList.remove('scroll67');
-        }
-        break;
-      case 1:
-        for (let i = 0; i < sliderArray.length; i++) {
-          slides[i].classList.remove('scroll34');
-          slides[i].classList.add('scroll67');
-        }
-        break;
-      default:
-        break;
-    }
-  }, false);
-});
