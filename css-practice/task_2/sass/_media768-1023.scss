@@ -1,9 +1,20 @@
 @import "variables";
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    header h1 {
-        font-size: 50px;
+
+    h2 {
+        font-size: 24px;
     }
+
+    header {
+        padding: 0;
+        h1 {
+            font-size: 32px;
+            padding-top: 100px;
+            line-height: 45px;
+        }
+    }
+    
     .user-actions {
         @include header-form-center;
     }
@@ -13,8 +24,17 @@
 
     .intro {
         @include intro-medium;
+        margin-top: 35px;
+        article {
+            width: 100%;
+            h2 {
+                font-size: 25px;
+            }
+        }
     }
-
+    .empty {
+        display: none;
+    }
     .about{
         div {
             @include flexbox();

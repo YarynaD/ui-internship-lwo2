@@ -13,10 +13,10 @@ button:hover {
 }
 
 header {
-    background: url(../img/photo-1433354359170-23a4ae7338c6.png) no-repeat;
-    background-size: cover;
-    padding-top: 215px;
-    padding-bottom: 189px;
+    background: none;
+    padding-top: 96px;
+    padding-bottom: 188px;
+    position: relative;
     h1{
         margin-top: 0;
         font-family: $header-font;
@@ -28,7 +28,18 @@ header {
         margin-left: 23%;
         word-spacing: 3px;
         letter-spacing: 1.4px;
-    }   
+        padding-top: 78px;
+        /*position: absolute;
+        top: 211px;
+        left: 21px;*/
+    }  
+    video {
+        position: absolute;
+        top: 0;
+        z-index: -5;
+        width: 100%;
+        opacity: 0.5;
+    } 
 }
 
 h3 {
@@ -126,6 +137,19 @@ a {
     background-position: center;
     margin-left: 40%;
     opacity: 0.5;
+    &:focus {
+        outline: none;
+      }
+    }
+.play {
+    background-image: url(../img/Polygon_1.png);
+}
+.pause {
+    background-image: url(../img/pause-icon-18-24.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    opacity: 0.3;
 }
 .intro {
     @include flexbox();
@@ -164,12 +188,12 @@ a {
     width: 39.5%;
     padding-top: 363px;
     padding-bottom: 361px;
-    background-color: $crossed-div-background-color;
+    background-color: rgba(237,237,237,0.4);
     background-image: url(../img/Rectangle_21_copy.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    z-index: +3;
+    z-index: -6;
 }
 
 .about {
@@ -443,6 +467,12 @@ aside {
         background-color: rgba(246,245,243, 0.05);
         margin-left: 29px;
         padding-left: 25px;
+        color: $section-background-color;
+        font-family: $font-main;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 75px;
+        letter-spacing: 0.64px;
         &::placeholder {
             color: $section-background-color;
             font-family: $font-main;
@@ -583,7 +613,11 @@ footer {
         z-index: 3;
     }
 }
-
+.disabled {
+    cursor: not-allowed; 
+    background-color: gray;
+    opacity: 0.7;
+}
 .follow-us {
     margin-top: 30px;
     margin-left: 10px;
