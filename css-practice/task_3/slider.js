@@ -41,4 +41,3 @@ window.onload = function() {
   initSlider('review_slider');
   initSlider('quotes_slider');
 };
-
