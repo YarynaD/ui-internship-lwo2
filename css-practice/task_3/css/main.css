@@ -459,29 +459,35 @@ hr {
       background-image: url(../img/DOWN_copy.png); }
 
 .slider {
-  width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
+#quotes_slider, #review_slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto; }
+
 .holder {
-  width: 90%;
+  width: 100%;
   overflow: hidden; }
 
 .slide-in {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative; }
+  display: flex; }
 
 .slide-holder {
-  width: 300%;
+  display: flex; }
+
+.slide-content-one {
   display: flex;
-  transform: translate(-33%);
-  transition-duration: 1s; }
+  width: 1200px;
+  justify-content: space-around; }
+
+.transition {
+  transition: transform 0.4s; }
 
 .chat {
   width: 150px;

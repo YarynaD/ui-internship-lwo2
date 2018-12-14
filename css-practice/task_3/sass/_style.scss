@@ -541,31 +541,40 @@ h4 {
 }
 
 .slider {
-    width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+#quotes_slider, #review_slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .holder {
-    width: 90%;
+    width: 100%;
     overflow: hidden;
 }
 .slide-in {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
 } 
 
 .slide-holder {
-    width: 300%;
     display: flex;
-    transform: translate(-33%);
-    transition-duration: 1s;
+}
+
+.slide-content-one {
+    display: flex;
+    width: 1200px;
+    justify-content: space-around;
+}
+
+.transition {
+    transition: transform 0.4s; 
 }
 
 .chat {
@@ -586,27 +595,6 @@ h4 {
         width: 140px;
     }
 }
-
-// .scroll-left{
-//     content:url('img/DOWN_copy22.png');
-//     width:100px;
-//     height: 100px;
-//   }
-//   .scroll-right{
-//     content:url('img/DOWN_copy22.png');
-//     width:100px;
-//     height: 100px;
-//   }
-//   .scroll-left{
-//     content:url('img/DOWN_copy22.png');
-//     width: 100px;
-//     height: 100px;
-//   }
-//   .scroll-right{
-//     content:url('img/DOWN_copy22.png');
-//     width:100px;
-//     height: 100px;
-//   }
 
 .team {
     padding-top: 88px;
