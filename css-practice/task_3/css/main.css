@@ -481,7 +481,7 @@ hr {
   width: 300%;
   display: flex;
   transform: translate(-33%);
-  transition-duration: 3s; }
+  transition-duration: 1s; }
 
 .chat {
   width: 150px;
