@@ -1,0 +1,86 @@
+@media (min-width: 1024px) and (max-width: 1430px) {
+    
+    header {
+        padding-bottom: 0;
+        padding-top: 40px;
+        h1 {
+            padding-top: 0;
+        }
+    }
+    
+    .user-actions {
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-self(center);
+        width: 180px;
+    }
+    .play-mode {
+        margin-left: 35%;
+    }
+    .try-now {
+        margin-left: 0;
+    }
+    .empty {
+        display: none;
+    }
+
+    .intro {
+        @include intro-medium;
+        article {
+            width: 100%;
+        }
+    }
+
+    .about {  
+        div {
+        @include justify-content(space-around);
+        width: 95%;
+        }
+         article {
+        width: 30%;
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .penholder {
+        left: 24px;
+    }
+
+    .macbook {
+        @include macbook; 
+    }
+        
+    .top-new {
+        @include top-new-medium;
+    }
+
+    .other-news {
+        padding-top: 10%;
+        img {
+            width: 70%;
+        }
+        article {
+            margin-bottom: 3%;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+        .pointer {
+            margin-right: 3%;
+        }
+    
+    footer {
+        img {
+            display: none;
+        }
+    }
+    
+    .footer-wrapper {
+        width: 91%;
+        margin-left: 8%;
+    }
+}
