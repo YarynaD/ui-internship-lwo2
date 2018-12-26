@@ -1,52 +1,63 @@
 import axios from 'axios';
 
 const httpServices = {
-    get: (item_url, res_url, tmt, fnctn, cb) => {
+    get: (catalogUrl, resourseUrl, tmt, fnctn, cb) => {
         axios({
-                url: item_url,
-                baseURL: res_url,
+                url: catalogUrl,
+                baseURL: resourseUrl,
                 method: 'get',
                 timeout: tmt,
-                validateStatus: fnctn,
-            })
-        .then(res => {
-        cb(res.data);
-        }).catch(function (error) {
-        console.log('Oh, an error... Err = ', error);
-    })
-},
-
-post: (item_url, res_url, dt, cb) =>
-    {
-        axios({
-            url: item_url,
-            baseURL: res_url,
-            method: 'post',
-            data: dt
-        })
-            .then(res => {
+                validateStatus: fnctn
+        }).then(res => {
             cb(res.data);
-    }).catch(function (error) {
-        console.log('Oh, an error... Err = ', error);
+        }).catch(function (error) {
+            console.log('Oh, an error... Err = ', error);
     })
 },
 
-delete: (item_url, res_url) =>
+post: (catalogUrl, resourseUrl, dt, fnctn, cb) =>
     {
         axios({
-            url: item_url,
-            baseURL: res_url,
-            method: 'delete'
-    });
+            url: catalogUrl,
+            baseURL: resourseUrl,
+            method: 'post',
+            data: dt,
+            validateStatus: fnctn
+        }).then(res => {
+            cb(res.data);
+        }).catch(function (error) {
+            console.log('Oh, an error... Err = ', error);
+    })
 },
 
-patch: (res_url, dt)  =>
+delete: (catalogUrl, resourseUrl, itemId, fnctn, cb) =>
     {
         axios({
-            baseURL: res_url,
+            url: catalogUrl,
+            baseURL: resourseUrl,
+            method: 'delete',
+            data: itemId,
+            validateStatus: fnctn
+        }).then(res => {
+            cb(res.data);
+        }).catch(function (error) {
+            console.log('Oh, an error... Err = ', error);
+    })
+},
+
+patch: (catalogUrl, resourseUrl, dt, fnctn, cb)  =>
+    {
+        axios({
+            url: catalogUrl,
+            baseURL: resourseUrl,
             method: 'patch',
-            data: dt
-        })
+            data: dt,
+            validateStatus: fnctn
+        }).then(res => {
+            cb(res.data);
+        }).catch(function (error) {
+            console.log('Oh, an error... Err = ', error);
+    })
     }
 }
 

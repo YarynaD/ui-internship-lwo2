@@ -15,8 +15,8 @@ class App extends Component {
 
   componentDidMount() {
     httpServices.get(my_url_init, my_baseUrl_init, my_timeout, my_func, (data) => {
-        this.setState({persons: data}, () => {
-        console.log('state', this.state);
+      this.setState({persons: data}, () => {
+      console.log('state', this.state);
     });
     });
   }
